@@ -55,7 +55,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun#ssh -theme gruvbox-dark -font "monospace 10" -show combi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -204,9 +205,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
 # wallpaper
-exec_always feh --bg-fill $HOME/Pictures/manjaro_3.png
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/manjaro_3.png
 # gaps
-gaps inner 10
+gaps inner 5
 gaps outer 5
 
 # disable windows title bar
