@@ -2,8 +2,17 @@
 
 # Theme
 import:
-  - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+  - ~/.config/alacritty/themes/themes/everforest.yml
 
+use_thin_strokes: true
+font:
+  normal:
+    family: "NotoMono Nerd Font"
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+# window: 
+#   opacity: 0.75
 
 # Import additional configuration files
 #
@@ -73,7 +82,7 @@ import:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  # opacity: 1.0
 
   # Startup Mode (changes require restart)
   #
