@@ -107,5 +107,6 @@ alias v="nvim"
 alias vi="vim"
 alias i3-conf="nvim ~/Documents/dotfiles/i3/.config/i3/config"
 alias alac-conf="nvim ~/Documents/dotfiles/alacritty/.config/alacritty/alacritty.yml"
+alias tmux="TERM=screen-256color-bce tmux"
 
 source /usr/share/nvm/init-nvm.sh
