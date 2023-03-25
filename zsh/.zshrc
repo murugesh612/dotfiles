@@ -105,5 +105,6 @@ alias c="clear"
 alias cx="clear -x"
 alias v="nvim"
 alias vi="vim"
+alias tmux="TERM=screen-256color-bce tmux"
 
 source /usr/share/nvm/init-nvm.sh
