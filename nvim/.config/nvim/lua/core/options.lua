@@ -12,7 +12,7 @@ opt.autowrite = true -- Enable auto write
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.cursorline = true -- Enable highlighting of the current line
 opt.ignorecase = true -- Ignore case
-opt.scrolloff = 8 -- Lines of context
+opt.scrolloff = 10 -- Lines of context
 
 -- opt.completeopt = "menu,menuone,noselect"
 -- opt.conceallevel = 3 -- Hide * markup for bold and italic

@@ -101,6 +101,36 @@ source $ZSH/oh-my-zsh.sh
 # alias ls="ls --color=auto"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+ export TERM='xterm-256color'
+ export VISUAL='nvim'
+ 
+ # Compilation flags
+ # export ARCHFLAGS="-arch x86_64"
+ 
+ # Set personal aliases, overriding those provided by oh-my-zsh libs,
+ # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+ # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+ # For a full list of active aliases, run `alias`.
+ #
+ # Example aliases
+ # alias zshconfig="mate ~/.zshrc"
+ # alias ohmyzsh="mate ~/.oh-my-zsh"
+ alias ls="ls --color=auto"
+ alias l="ls -la --color=auto"
+ alias cl="clear"
+ alias cx="clear -x"
+ alias givv='cd ~/Byteridge/givv/'
+ alias givvcore="cd ~/Byteridge/givv/core/core/"
+ alias givvclone="cd ~/Byteridge/givv/core/clone_core/"
+ alias givvdoc="cd ~/Byteridge/givv/documents/"
+ alias dotfiles="cd ~/PersonalProjects/dotfiles/"
+ alias tmux="TERM=screen-256color-bce tmux"
+ alias fd="fdfind"
+ alias v="fd --type f --hidden  .git | fzf-tmux -p | xargs -r -0  nvim"
+ # alias tmux="TERM=screen-256color-bce tmux"
+ 
+
 alias c="clear"
 alias cx="clear -x"
 alias v="nvim"
