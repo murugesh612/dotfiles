@@ -30,26 +30,27 @@ colors: *everforest_dark_hard
 # use_thin_strokes: true
 font:
   normal:
-    family: UbuntuMono Nerd Font
+    family: "UbuntuMono"
     style: Regular
   bold:
-    family: "UbuntuMono Nerd Font"
+    family: "UbuntuMono"
     style: Bold
   italic:
-    family: "UbuntuMono Nerd Font"
+    family: "UbuntuMono"
     style: Italic
   bold_italic:
-    family: "UbuntuMono Nerd Font"
+    family: "UbuntuMono"
     style: Bold Italic
-  size: 12.0
+  size: 14.0
   offset:
    x: 0
    y: 0
-background_opacity: 0.95
+# background_opacity: 0.95
 window:
   padding:
    x: 10
    y: 10
+  opacity: 0.95
 
 # Import additional configuration files
 #
