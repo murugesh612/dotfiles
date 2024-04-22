@@ -1,14 +1,20 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/sbin:/usr/sbin:$PATH:$HOME/Flutter/flutter/bin
+
+export GOPATH=$HOME/PersonalProjects/golang
+export PATH=$PATH:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bira"
+# ZSH_THEME="frontcube"
+ZSH_THEME="jbergantine"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,9 +76,8 @@ ZSH_THEME="bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history lighthouse man node npm nvm themes vi-mode)
+plugins=(git docker gcloud node web-search themes vi-mode zsh-autosuggestions)
 
-bindkey -v
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -80,14 +85,17 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
+
+export TERM='xterm-256color'
+export VISUAL='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -98,15 +106,36 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias ls="ls --color=auto"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias c="clear"
+alias ls="ls --color=auto"
+alias l="ls -la --color=auto"
+alias cl="clear"
 alias cx="clear -x"
-alias v="nvim"
-alias vi="vim"
-alias i3-conf="nvim ~/Documents/dotfiles/i3/.config/i3/config"
-alias alac-conf="nvim ~/Documents/dotfiles/alacritty/.config/alacritty/alacritty.yml"
-alias tmux="TERM=screen-256color-bce tmux"
+alias givv='cd ~/Byteridge/givv/'
+alias pas='nvim ~/Backup/pas/pas'
+alias gcore="cd ~/Byteridge/givv/core/core/"
+alias gfront="cd ~/Byteridge/givv/core/frontend/"
+alias gdoc="cd ~/Byteridge/givv/documents/"
+alias ggdoc="cd ~/Byteridge/givv/documents/giftcards"
+alias gldoc="cd ~/Byteridge/givv/documents/link_token"
+alias dotfiles="cd ~/PersonalProjects/dotfiles/"
+alias ydp="yarn debug"
+alias yd="yarn debug | pino-pretty"
+# alias tmux="TERM=screen-256color-bce tmux"
+# alias fd="fdfind"
+alias v="fd --type f --hidden --exclude .git | fzf-tmux -p | xargs -r  nvim"
+alias nn="fd --type f --hidden --exclude .git --extension norg | fzf-tmux -p | xargs -r  nvim"
+alias code='vscodium'
+# alias tmux="TERM=screen-256color-bce tmux"
+# neofetch on startup
+# neofetch
+# Enable vi mode
+bindkey -v
+#
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /usr/share/nvm/init-nvm.sh
+# Created by `pipx` on 2024-03-10 11:32:59
+export PATH="$PATH:/home/rico/.local/bin"

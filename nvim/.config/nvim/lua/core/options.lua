@@ -13,6 +13,10 @@ opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.cursorline = true -- Enable highlighting of the current line
 opt.ignorecase = true -- Ignore case
 opt.scrolloff = 8 -- Lines of context
+opt.guicursor = "a:block-nCursor"
+opt.termguicolors = true -- True color support
+opt.t_Co = 256
+opt.background = "dark"
 
 -- opt.completeopt = "menu,menuone,noselect"
 -- opt.conceallevel = 3 -- Hide * markup for bold and italic
